@@ -1,5 +1,5 @@
 # Stage 1: Build con Maven y JDK 24
-FROM eclipse-temurin:24-jdk-alpine AS build
+FROM maven:3.9.4-jdk-20 AS build
 WORKDIR /app
 COPY pom.xml .
 COPY src ./src
